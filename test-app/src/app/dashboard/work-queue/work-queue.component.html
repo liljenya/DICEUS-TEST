@@ -1,1 +1,43 @@
-<p>work-queue works!</p>
+<div class="work-queue">
+    <div class="header-container">
+        <h2>Work Queue</h2>
+        <div class="sub-header-container">
+            <a>Assigned to me (12)</a>
+            <a>Pending Review (8)</a>
+            <a>Referrals (3)</a>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <div class="table-titles">
+            <p>ORIGINATOR</p>
+            <p>CLIENT/LINE</p>
+            <p>TYPE</p>
+            <p>STATUS</p>
+            <p>CREATED</p>
+        </div>
+
+        <div class="table-items" *ngFor="let item of workQueueItems">
+            <div class="originator-cell">
+                <div class="icon">{{ item.icon }}</div>
+                <span>{{ item.originator }}</span>
+            </div>
+            <div class="client-line-cell">
+                <p>{{ item.client }}</p>
+                <p>{{ item.line }}</p>
+            </div>
+            <p>{{ toTypeString(item.type) }}</p>
+            <p class="status-cell">
+                <span class="status-dot" [ngClass]="getStatusClass(item.status)"></span>
+                {{ toStatusString(item.status) }}
+            </p>
+            <p>{{ item.created }}</p>
+            <button class="dots-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+
+</div>

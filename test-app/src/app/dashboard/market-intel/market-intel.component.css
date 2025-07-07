@@ -1,0 +1,47 @@
+.market-intelligence-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-div);
+    padding: 20px;
+    border-radius: 20px;
+    gap: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.market-intelligence-container h2 {
+    margin: 0 0 8px;
+}
+
+.market-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.bullet {
+    font-size: 100px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.bullet-blue {
+    color: rgb(20, 20, 129);
+}
+
+.bullet-yellow {
+    color: rgb(226, 155, 22);
+}
+
+.bullet-red {
+    color: rgb(134, 13, 13);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 8px 0;
+}

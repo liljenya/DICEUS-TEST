@@ -1,0 +1,46 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.top-container {
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-row {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.work-queue {
+    flex: 2.5;
+    min-width: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-goals {
+    flex: 1.2;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 280px;
+    flex-shrink: 0;
+}
+
+.accounts-table {
+    width: 100%;
+}

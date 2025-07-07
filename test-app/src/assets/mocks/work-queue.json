@@ -1,0 +1,56 @@
+[
+    {
+        "icon": "SM",
+        "originator": "Sam Masters",
+        "client": "NAMEX Tech Solutions",
+        "line": "Cyber Liability",
+        "type": 0,
+        "status": 0,
+        "created": "2025/04/16"
+    },
+    {
+        "icon": "AW",
+        "originator": "Annalise Willis",
+        "client": "Maritime Logistics Corp",
+        "line": "Marine Cargo",
+        "type": 0,
+        "status": 0,
+        "created": "2025/04/20"
+    },
+    {
+        "icon": "PD",
+        "originator": "Patrick Devenport",
+        "client": "GreenField Energy Ltd",
+        "line": "Environmental",
+        "type": 1,
+        "status": 0,
+        "created": "2025/04/16"
+    },
+    {
+        "icon": "AK",
+        "originator": "Ana Killian",
+        "client": "NorthStar Financial Group",
+        "line": "D&O Liability",
+        "type": 0,
+        "status": 1,
+        "created": "2025/04/22"
+    },
+    {
+        "icon": "AK",
+        "originator": "Ana Killian",
+        "client": "Alliance Healthcare Systems",
+        "line": "Medical Malpractice",
+        "type": 2,
+        "status": 2,
+        "created": "2025/04/28"
+    },
+    {
+        "icon": "MK",
+        "originator": "Me",
+        "client": "QuantumTech Industries",
+        "line": "Product Liability",
+        "type": 2,
+        "status": 2,
+        "created": "2025/04/20"
+    }
+]
