@@ -1,0 +1,41 @@
+<div class="metrics-container">
+    <h2 class="main-title">Performance Metrics</h2>
+
+    <div class="cards-row">
+        <div class="metric-card">
+            <div class="card-header">
+                <h2>Winnability</h2>
+                <span class="dots">••••</span>
+            </div>
+            <p class="big">{{toStringWinnability (metrics.winnability) }}</p>
+            <a href="#">See all factors →</a>
+        </div>
+
+        <div class="metric-card">
+            <h2>Loss Ratio</h2>
+            <p class="big">{{ metrics.ratioActual }}%</p>
+            <p>vs {{ metrics.ratioTarget }}% target</p>
+            <a href="#">View history →</a>
+        </div>
+
+        <div class="metric-card">
+            <h2>Premium Growth</h2>
+            <p class="big">{{ metrics.growthIncrease }}%</p>
+            <p>YoY increase</p>
+            <p>${{ metrics.growthActual }}M vs ${{ metrics.growthTarget }}M Target</p>
+            <a href="#">View trend →</a>
+        </div>
+
+        <div class="metric-card">
+            <h2>Exposure Distribution</h2>
+            <div *ngFor="let distribution of metrics.distribution" class="distribution-row">
+                <div class="bar-container">
+                    <div class="bar-fill" [style.width.%]="distribution.value"></div>
+                </div>
+                <div class="bar-label">
+                    {{ distribution.name }}: {{ distribution.value }}%
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

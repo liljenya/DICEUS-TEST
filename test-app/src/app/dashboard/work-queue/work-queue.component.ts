@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WorkQueueService } from '../../services/work-queue.service';
-import { WorkQueueItem, WorkQueueItemStatus, WorkQueueItemType } from '../../../models/work-queue-item';
+import { WorkQueueItem, WorkQueueItemStatus, WorkQueueItemType } from '../../../models/dashboard/work-queue-item';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 

@@ -5,6 +5,7 @@
     gap: 15px;
     padding: 20px;
     border-radius: 20px;
+    width: 100%;
 }
 
 .quick-actions-container h2 {

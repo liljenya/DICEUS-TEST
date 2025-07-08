@@ -14,3 +14,27 @@ body {
     background-color: rgb(18, 22, 34);
     color: rgb(229, 231, 235);
 }
+
+.dots-button {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+    gap: 3px;
+    margin-left: 20px;
+}
+
+.dots-button span {
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+}

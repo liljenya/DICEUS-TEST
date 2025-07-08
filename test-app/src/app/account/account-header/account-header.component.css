@@ -1,0 +1,153 @@
+.header-container {
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+}
+
+.block-one {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-one a {
+    color: var(--accent-color);
+}
+
+.breadcrumb {
+    font-size: 14px;
+}
+
+.block-one-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    margin-top: 10px;
+}
+
+.logo-placeholder {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--background-div);
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h1 {
+    font-size: 34px;
+    font-weight: 300;
+    margin: 0 0 16px 0;
+}
+
+.location {
+    font-size: 14px;
+    white-space: pre-line;
+    max-width: 220px;
+}
+
+.account-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.location {
+    font-size: 14px;
+    white-space: pre-line;
+    max-width: 220px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-block span {
+    font-size: 12px;
+    color: var(--nav-text);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.info-block p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.divider {
+    width: 1px;
+    background-color: var(--border-color);
+    height: 36px;
+    align-self: center;
+}
+
+.block-two {
+    border: 1px solid rgb(253, 210, 97);
+    border-radius: 25px;
+    margin-left: 80px;
+    padding: 16px 20px;
+    line-height: 0.1;
+    gap: 20px;
+    background-color: var(--background-div);
+}
+
+.block-warning {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 10px;
+}
+
+.block-warning h2 {
+    font-weight: 300;
+    color: rgb(253, 210, 97);
+}
+
+.block-two-content {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.subblock-one,
+.subblock-two,
+.subblock-three {
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    line-height: 0.5;
+}
+
+.subblock-one h2,
+.subblock-two h2,
+.subblock-three h2 {
+    font-weight: 300;
+    font-size: 15px;
+    margin: 0 0 0 0;
+}
+
+.subblock-one p,
+.subblock-two p,
+.subblock-three p {
+    font-weight: 300;
+    font-size: 13px;
+    color: var(--border-color);
+}
+
+.subblock-one a,
+.subblock-two a,
+.subblock-three a {
+    font-size: 14px;
+    color: var(--accent-color);
+    text-decoration: none;
+}

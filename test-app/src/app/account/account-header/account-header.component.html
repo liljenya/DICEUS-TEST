@@ -1,0 +1,67 @@
+<div class="header-container">
+    <div class="block-one">
+        <p class="breadcrumb">
+            Dashboard // Accounts // <a>{{ account.name }}</a>
+        </p>
+
+        <div class="block-one-content">
+            <div class="logo-placeholder">KR</div>
+
+            <div class="info">
+                <h1>{{ account.name }}</h1>
+
+                <div class="account-info">
+                    <div class="info-block location-block">
+                        <p class="location">{{ account.location }}</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info-block">
+                        <span>EXISTING ACCOUNT</span>
+                        <p>{{ account.existingAccount }}</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info-block">
+                        <span>BROKER</span>
+                        <p>{{ account.broker }}</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info-block">
+                        <span>UNDERWRITER</span>
+                        <p>{{ account.underwriter }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-two">
+        <div class="block-warning">
+            <svg width="24" height="24" viewBox="1098 227 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1110 249C1115.52 249 1120 244.523 1120 239C1120 233.477 1115.52 229 1110 229C1104.48 229 1100 233.477 1100 239C1100 244.523 1104.48 249 1110 249Z"
+                    stroke="#FDD261" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M1110 235V239M1110 243H1110.01" stroke="#FDD261" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <h2>
+                Needs Attention
+            </h2>
+        </div>
+        <div class="block-two-content">
+            <div class="subblock-one">
+                <h2>Marine Survive Required</h2>
+                <p>Scheduled for 06/12/2025</p>
+                <a href="#">Review details link -></a>
+            </div>
+            <div class="subblock-two">
+                <h2>Loss control complete</h2>
+                <p>Last inspection:02/15/2025</p>
+                <a href="#">View report -></a>
+            </div>
+            <div class="subblock-three">
+                <h2>Claims Review Required</h2>
+                <p>3 open claims // $245,000 TL</p>
+                <a href="#">View claims -></a>
+            </div>
+        </div>
+    </div>
+</div>

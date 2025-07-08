@@ -1,12 +1,77 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AccountItem, AccountItemAppetite, AccountItemStatus } from '../../../models/dashboard/account-item';
+import { AccountsService } from '../../services/accounts.service';
+import { CommonModule } from '@angular/common';
+import { Winnability } from '../../../models/winnability';
 
 @Component({
   selector: 'app-accounts-table',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './accounts-table.component.html',
   styleUrl: './accounts-table.component.css'
 })
-export class AccountsTableComponent {
+export class AccountsTableComponent implements OnInit {
+  accounts: AccountItem[] = [];
 
+  constructor(private accountService: AccountsService) {
+  }
+
+  ngOnInit(): void {
+    this.accountService.getAccounts().subscribe(data => {
+      this.accounts = data;
+    });
+  }
+
+  toStringAppetite(appetite: AccountItemAppetite) {
+    switch (appetite) {
+      case AccountItemAppetite.High:
+        return 'HIGH';
+      case AccountItemAppetite.Medium:
+        return 'MEDIUM';
+      case AccountItemAppetite.Cautious:
+        return 'CAUTIOUS';
+    }
+  }
+
+  getRatioColor(ratio: number): string {
+    if (ratio <= 33) {
+      return 'green';
+    } else if (ratio > 33 && ratio < 67) {
+      return 'yellow';
+    } else {
+      return 'red';
+    }
+  }
+
+  toStringStatus(status: AccountItemStatus) {
+    switch (status) {
+      case AccountItemStatus.Active:
+        return 'Active';
+      case AccountItemStatus.Review:
+        return 'Under Review';
+    }
+  }
+
+  getStatusColor(status: AccountItemStatus): string {
+    switch (status) {
+      case AccountItemStatus.Active:
+        return 'dot green';
+      case AccountItemStatus.Review:
+        return 'dot blue';
+      default:
+        return 'dot';
+    }
+  }
+
+  toStringWinnability(winnability: Winnability) {
+    switch (winnability) {
+      case Winnability.VeryStrong:
+        return 'Very Strong';
+      case Winnability.Strong:
+        return 'Strong';
+      case Winnability.Medium:
+        return 'Medium';
+    }
+  }
 }

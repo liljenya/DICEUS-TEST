@@ -1,0 +1,113 @@
+{
+    "name": "Maritime Logistics Corp",
+    "location": "425 Harbor Boulevard,Suite 300 Seattle,WA 98104",
+    "existingAccount": 54383,
+    "broker": "Marsh McLennan",
+    "underwriter": "Kate Johnson",
+    "metrics": {
+        "winnability": 0,
+        "ratioActual": 25,
+        "ratioTarget": 42,
+        "growthIncrease": 12.4,
+        "growthActual": 123,
+        "growthTarget": 150,
+        "distribution": [
+            {
+                "name": "Marine Cargo",
+                "value": 71.4
+            },
+            {
+                "name": "General Liability",
+                "value": 20
+            },
+            {
+                "name": "Workers Comp",
+                "value": 8.6
+            }
+        ]
+    },
+    "policies": {
+        "cargoPremium": 625.000,
+        "cargoDate": "2026/06/30",
+        "liabilityPremium": 175.000,
+        "liabilityDate": "2026/06/30",
+        "compPremium": 75.000,
+        "propertyPremium": 64.82983,
+        "umbrellaPremium": 275.000,
+        "umbrellaDate": "2026/03/13"
+    },
+    "status": {
+        "isSubmitted": true,
+        "isReviewed": true,
+        "isQuoted": true,
+        "isBinded": true,
+        "isIssued": true,
+        "isRenewed": false
+    },
+    "document": {
+        "isKYC": true,
+        "isRegulatory": true,
+        "isRequired": true,
+        "isFinancial": true
+    },
+    "details": {
+        "score": 82,
+        "winnability": 0,
+        "marketAvg": 68,
+        "competitor": 88,
+        "increasing": [
+            {
+                "name": "Brokers relationship",
+                "value": 100,
+                "change": 28
+            },
+            {
+                "name": "Loss history",
+                "value": 70,
+                "change": 22
+            },
+            {
+                "name": "Industry growth",
+                "value": 50,
+                "change": 16
+            },
+            {
+                "name": "Multiline opportunity",
+                "value": 20,
+                "change": 11
+            }
+        ],
+        "decreasing": [
+            {
+                "name": "Premium pricing",
+                "value": 100,
+                "change": 24
+            },
+            {
+                "name": "Total exposure",
+                "value": 70,
+                "change": 18
+            },
+            {
+                "name": "Loss ratio trend",
+                "value": 50,
+                "change": 13
+            },
+            {
+                "name": "Market competition",
+                "value": 20,
+                "change": 5
+            }
+        ],
+        "recommendations": [
+            {
+                "title": "Offer 5% premium discount in exchange for 3-years commitment",
+                "description": "Historical win rate increases 24% with multi-year commitments.Current pricing is 12% above market average.This approach would strengthen retention while maintaining adequate profitability."
+            },
+            {
+                "title": "Propose risk control services for cargo handling procedures",
+                "description": "Can potentially reduce loss ratio by 15-20% based on simillar maritime accounts in your portfolio. Specific focus on loading/unloading operations would address the most frequent claim scenarios."
+            }
+        ]
+    }
+}

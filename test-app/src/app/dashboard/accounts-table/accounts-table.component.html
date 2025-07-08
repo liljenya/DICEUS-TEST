@@ -1,1 +1,59 @@
-<p>accounts-table works!</p>
+<div class="accounts-table">
+    <div class="accounts-header">
+        <h2>My accounts</h2>
+        <div class="header-controls">
+            <input type="text" placeholder="Search" />
+            <button>Filter</button>
+            <button>Sort</button>
+            <button>Group</button>
+            <button>+ New</button>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <div class="table-row table-head">
+            <div>ACCOUNT NAME / TYPE</div>
+            <div>LINE</div>
+            <div>BROKER</div>
+            <div>RENEWAL DATE</div>
+            <div>PREMIUM</div>
+            <div>RATED PREMIUM</div>
+            <div>LOSS RATIO</div>
+            <div>APPETITE</div>
+            <div>STATUS</div>
+            <div>TRIAGE</div>
+            <div>WINNABILITY</div>
+            <div></div>
+        </div>
+
+        <div class="table-row" *ngFor="let item of accounts">
+            <div>
+                {{ item.name }}
+                <div class="type">{{ item.type }}</div>
+            </div>
+            <div>{{ item.line }}</div>
+            <div>{{ item.broker }}</div>
+            <div>{{ item.renewal }}</div>
+            <div class="premium">${{ item.premium }}M</div>
+            <div>${{ item.rated }}M</div>
+            <div class="loss" [ngClass]="getRatioColor(item.ratio)">
+                {{ item.ratio }}%
+            </div>
+            <div class="appetite">{{ toStringAppetite(item.appetite) }}</div>
+            <div class="status">
+                <span class="dot" [ngClass]="getStatusColor(item.status)"></span>
+                {{ toStringStatus(item.status) }}
+            </div>
+            <div class="triage">{{ item.triage }}</div>
+            <div class="winnability">
+                <span class="dots">• • • •</span>
+                {{ toStringWinnability(item.winnability) }}
+            </div>
+            <button class="dots-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</div>

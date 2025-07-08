@@ -3,14 +3,6 @@
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    box-sizing: border-box;
-}
-
-.top-container {
-    border-radius: 12px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
 }
 
 .top-row {
@@ -27,7 +19,7 @@
 }
 
 .portfolio-goals {
-    flex: 1.2;
+    flex: 0.4;
     min-width: 320px;
     display: flex;
     flex-direction: column;
@@ -39,6 +31,12 @@
     gap: 20px;
     width: 280px;
     flex-shrink: 0;
+}
+
+.quick-actions,
+.market-intel {
+    display: flex;
+    height: 100%;
 }
 
 .accounts-table {
