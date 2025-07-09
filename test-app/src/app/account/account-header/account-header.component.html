@@ -1,40 +1,41 @@
-<div class="header-container">
-    <div class="block-one">
+<div class="account-header">
+    <div class="account-summary">
         <p class="breadcrumb">
             Dashboard // Accounts // <a>{{ account.name }}</a>
         </p>
 
-        <div class="block-one-content">
-            <div class="logo-placeholder">KR</div>
+        <div class="summary-content">
+            <div class="account-logo">KR</div>
 
-            <div class="info">
+            <div class="account-info">
                 <h1>{{ account.name }}</h1>
 
-                <div class="account-info">
-                    <div class="info-block location-block">
-                        <p class="location">{{ account.location }}</p>
+                <div class="details-row">
+                    <div class="info-item location">
+                        <p>{{ account.location }}</p>
                     </div>
                     <div class="divider"></div>
-                    <div class="info-block">
-                        <span>EXISTING ACCOUNT</span>
+                    <div class="info-item">
+                        <span>Existing Account</span>
                         <p>{{ account.existingAccount }}</p>
                     </div>
                     <div class="divider"></div>
-                    <div class="info-block">
-                        <span>BROKER</span>
+                    <div class="info-item">
+                        <span>Broker</span>
                         <p>{{ account.broker }}</p>
                     </div>
                     <div class="divider"></div>
-                    <div class="info-block">
-                        <span>UNDERWRITER</span>
+                    <div class="info-item">
+                        <span>Underwriter</span>
                         <p>{{ account.underwriter }}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="block-two">
-        <div class="block-warning">
+
+    <div class="attention-panel">
+        <div class="attention-header">
             <svg width="24" height="24" viewBox="1098 227 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M1110 249C1115.52 249 1120 244.523 1120 239C1120 233.477 1115.52 229 1110 229C1104.48 229 1100 233.477 1100 239C1100 244.523 1104.48 249 1110 249Z"
@@ -42,25 +43,24 @@
                 <path d="M1110 235V239M1110 243H1110.01" stroke="#FDD261" stroke-width="1.5" stroke-linecap="round"
                     stroke-linejoin="round" />
             </svg>
-            <h2>
-                Needs Attention
-            </h2>
+            <h2>Needs Attention</h2>
         </div>
-        <div class="block-two-content">
-            <div class="subblock-one">
-                <h2>Marine Survive Required</h2>
+
+        <div class="attention-content">
+            <div class="attention-item">
+                <h2>Marine Survey Required</h2>
                 <p>Scheduled for 06/12/2025</p>
-                <a href="#">Review details link -></a>
+                <a href="#">Review details link →</a>
             </div>
-            <div class="subblock-two">
-                <h2>Loss control complete</h2>
-                <p>Last inspection:02/15/2025</p>
-                <a href="#">View report -></a>
+            <div class="attention-item">
+                <h2>Loss Control Complete</h2>
+                <p>Last inspection: 02/15/2025</p>
+                <a href="#">View report →</a>
             </div>
-            <div class="subblock-three">
+            <div class="attention-item">
                 <h2>Claims Review Required</h2>
                 <p>3 open claims // $245,000 TL</p>
-                <a href="#">View claims -></a>
+                <a href="#">View claims →</a>
             </div>
         </div>
     </div>

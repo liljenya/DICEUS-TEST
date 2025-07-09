@@ -1,0 +1,72 @@
+.details-container {
+    display: flex;
+    background-color: var(--background-div);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.menu {
+    width: 220px;
+    padding: 15px;
+    border-radius: 8px;
+    color: rgb(229, 231, 235);
+}
+
+.menu h2 {
+    margin: 16px 0 8px;
+    font-weight: 300;
+}
+
+.menu p,
+.menu a {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 4px 0;
+    color: var(--nav-text);
+    text-decoration: none;
+}
+
+.support {
+    background-color: rgb(37, 42, 61);
+    border-radius: 16px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+
+.winnability-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.winnability-container h2 {
+    color: rgb(229, 231, 235);
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.winnability-header {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.score,
+.trend,
+.position {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(37, 42, 61);
+    padding: 16px;
+    border-radius: 8px;
+    gap: 8px;
+}
+
+.score-value p:first-child {
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--nav-text);
+}

@@ -1,7 +1,9 @@
-<app-account-header [account]="account"></app-account-header>
-<app-performance-metrics [metrics]="account.metrics"></app-performance-metrics>
-<app-policies-summary [policies]="account.policies"></app-policies-summary>
-<app-status-compliance [status]="account.status" [document]="account.document"></app-status-compliance>
-<app-winnability [details]="account.details"></app-winnability>
-<app-communication></app-communication>
-<app-policies-table></app-policies-table>
+<div *ngIf="account">
+    <app-account-header [account]="account"></app-account-header>
+    <app-performance-metrics [metrics]="account.metrics"></app-performance-metrics>
+    <app-policies-summary [policies]="account.policies"></app-policies-summary>
+    <app-status-compliance [status]="account.status" [document]="account.document"></app-status-compliance>
+    <app-winnability [details]="account.details"></app-winnability>
+    <app-communication></app-communication>
+    <app-policies-table></app-policies-table>
+</div>

@@ -1,0 +1,145 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.account-status-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 34px;
+}
+
+.account-status-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-div);
+    border-radius: 16px;
+    padding: 20px;
+    gap: 14px;
+}
+
+.status-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    min-width: 60px;
+}
+
+.status {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status svg {
+    width: 20px;
+    height: 20px;
+}
+
+.status-item p {
+    margin: 0;
+    color: var(--nav-text);
+    text-align: center;
+}
+
+.status-delimeter {
+    color: var(--border-color);
+}
+
+.status-checked {
+    border: 2px solid rgb(59, 185, 121);
+}
+
+.status-checked svg {
+    stroke: rgb(59, 185, 121);
+}
+
+.status-unchecked {
+    border: 2px dashed rgb(138, 139, 152);
+}
+
+.status-unchecked svg {
+    stroke: rgb(138, 139, 152);
+}
+
+.status-delimeter-unchecked {
+    color: rgb(138, 139, 152);
+}
+
+.status-delimeter-checked {
+    color: rgb(59, 185, 121);
+}
+
+.compliance-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 80px;
+    margin-right: 50px;
+    min-width: 320px;
+}
+
+.compliance-title {
+    color: var(--nav-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.doc-history-link {
+    font-size: 14px;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.doc-compliance-wrapper {
+    background-color: var(--background-div);
+    border-radius: 16px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 100%;
+}
+
+.doc-status-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+}
+
+.doc-status-item {
+    display: flex;
+    align-items: center;
+    width: calc(50% - 20px);
+    gap: 12px;
+}
+
+.doc-status {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doc-status svg {
+    width: 35px;
+    height: 35px;
+}
+
+.doc-status-item p {
+    font-size: 14px;
+    margin: 0;
+    color: var(--nav-text);
+    white-space: nowrap;
+    flex-grow: 1;
+}

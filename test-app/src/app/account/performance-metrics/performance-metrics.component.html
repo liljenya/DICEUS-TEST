@@ -7,21 +7,25 @@
                 <h2>Winnability</h2>
                 <span class="dots">••••</span>
             </div>
-            <p class="big">{{toStringWinnability (metrics.winnability) }}</p>
+            <h2 class="big">{{toStringWinnability (metrics.winnability) }}</h2>
             <a href="#">See all factors →</a>
         </div>
 
         <div class="metric-card">
             <h2>Loss Ratio</h2>
-            <p class="big">{{ metrics.ratioActual }}%</p>
-            <p>vs {{ metrics.ratioTarget }}% target</p>
+            <div class="inline-metric">
+                <h2 class="big">{{ metrics.ratioActual }}%</h2>
+                <p class="side-text">vs {{ metrics.ratioTarget }}% target</p>
+            </div>
             <a href="#">View history →</a>
         </div>
 
         <div class="metric-card">
             <h2>Premium Growth</h2>
-            <p class="big">{{ metrics.growthIncrease }}%</p>
-            <p>YoY increase</p>
+            <div class="inline-metric">
+                <h2 class="big">{{ metrics.growthIncrease }}%</h2>
+                <p class="side-text">YoY increase</p>
+            </div>
             <p>${{ metrics.growthActual }}M vs ${{ metrics.growthTarget }}M Target</p>
             <a href="#">View trend →</a>
         </div>

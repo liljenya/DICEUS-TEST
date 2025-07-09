@@ -1,1 +1,85 @@
-<p>policies-summary works!</p>
+<div class="policies-section">
+    <h2>Policies</h2>
+    <div class="policies-grid">
+
+        <div class="policy-card marine-cargo">
+            <div class="policy-header">
+                <svg width="44" height="44" viewBox="180 860 40 40" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                        d="M196.999 872.419V877.5M196.999 861.5V865.5M206.333 876.167V868.167C206.333 867.459 206.052 866.781 205.552 866.281C205.052 865.781 204.373 865.5 203.666 865.5H190.333C189.625 865.5 188.947 865.781 188.447 866.281C187.947 866.781 187.666 867.459 187.666 868.167V876.167"
+                        stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M206.839 885.5C208.273 883.08 209.02 880.314 208.999 877.5L198.082 872.648C197.741 872.497 197.372 872.418 196.999 872.418C196.626 872.418 196.257 872.497 195.916 872.648L184.999 877.5C184.937 881.292 186.271 884.974 188.746 887.847"
+                        stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M183.666 886.833C184.466 887.5 185.266 888.167 186.999 888.167C190.333 888.167 190.333 885.5 193.666 885.5C195.399 885.5 196.199 886.167 196.999 886.833C197.799 887.5 198.599 888.167 200.333 888.167C203.666 888.167 203.666 885.5 206.999 885.5C208.733 885.5 209.533 886.167 210.333 886.833"
+                        stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <h2>Marine Cargo</h2>
+            </div>
+            <p>Premium: ${{policies.cargoPremium}}</p>
+            <p>Eff.Date: {{policies.cargoDate ? policies.cargoDate : '---'}}</p>
+        </div>
+
+        <div class="policy-card general-liability">
+            <div class="policy-header">
+                <svg width="34" height="34" viewBox="514 861 24 28" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                        d="M535.666 875.833C535.666 882.5 531 885.833 525.453 887.767C525.163 887.865 524.847 887.86 524.56 887.753C519 885.833 514.333 882.5 514.333 875.833V866.5C514.333 866.146 514.473 865.807 514.724 865.557C514.974 865.307 515.313 865.167 515.666 865.167C518.333 865.167 521.666 863.567 523.986 861.54C524.269 861.299 524.628 861.166 525 861.166C525.371 861.166 525.731 861.299 526.013 861.54C528.346 863.58 531.666 865.167 534.333 865.167C534.687 865.167 535.026 865.307 535.276 865.557C535.526 865.807 535.666 866.146 535.666 866.5V875.833Z"
+                        stroke="#3BB979" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M521 874.5L523.667 877.167L529 871.833" stroke="#3BB979" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <h2>General Liability</h2>
+            </div>
+            <p>Premium: ${{policies.liabilityPremium}}</p>
+            <p>Eff.Date: {{policies.liabilityDate ? policies.liabilityDate : '---'}}</p>
+        </div>
+
+        <div class="policy-card workers-comp">
+            <div class="policy-header">
+                <svg width="34" height="34" viewBox="886 861 24 28" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                        d="M907.666 875.833C907.666 882.5 903 885.833 897.453 887.767C897.163 887.865 896.847 887.86 896.56 887.753C891 885.833 886.333 882.5 886.333 875.833V866.5C886.333 866.146 886.473 865.807 886.724 865.557C886.974 865.307 887.313 865.167 887.666 865.167C890.333 865.167 893.666 863.567 895.986 861.54C896.269 861.299 896.628 861.166 897 861.166C897.371 861.166 897.731 861.299 898.013 861.54C900.346 863.58 903.666 865.167 906.333 865.167C906.687 865.167 907.026 865.307 907.276 865.557C907.526 865.807 907.666 866.146 907.666 866.5V875.833Z"
+                        stroke="#6A3BF6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M889.501 883.713C890.07 882.183 891.094 880.863 892.434 879.931C893.775 879 895.369 878.501 897.002 878.501C898.634 878.501 900.228 879.001 901.568 879.934C902.909 880.866 903.932 882.187 904.5 883.717"
+                        stroke="#6A3BF6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M896.999 878.5C899.945 878.5 902.333 876.112 902.333 873.167C902.333 870.221 899.945 867.833 896.999 867.833C894.054 867.833 891.666 870.221 891.666 873.167C891.666 876.112 894.054 878.5 896.999 878.5Z"
+                        stroke="#6A3BF6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <h2>Workers Comp</h2>
+            </div>
+            <p>Premium: ${{policies.compPremium}}</p>
+            <p>Eff.Date: {{policies.compDate ? policies.compDate : '---'}}</p>
+        </div>
+
+        <div class="policy-card property">
+            <div class="policy-header">
+                <svg width="34" height="34" viewBox="1231 861 28 28" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                        d="M1237 887.833V863.833C1237 863.126 1237.28 862.448 1237.78 861.948C1238.28 861.447 1238.96 861.167 1239.67 861.167H1250.33C1251.04 861.167 1251.72 861.447 1252.22 861.948C1252.72 862.448 1253 863.126 1253 863.833V887.833M1237 887.833H1253M1237 887.833H1234.33C1233.63 887.833 1232.95 887.552 1232.45 887.052C1231.95 886.552 1231.67 885.874 1231.67 885.167V877.167C1231.67 876.459 1231.95 875.781 1232.45 875.281C1232.95 874.781 1233.63 874.5 1234.33 874.5H1237M1253 887.833H1255.67C1256.37 887.833 1257.05 887.552 1257.55 887.052C1258.05 886.552 1258.33 885.874 1258.33 885.167V873.167C1258.33 872.459 1258.05 871.781 1257.55 871.281C1257.05 870.781 1256.37 870.5 1255.67 870.5H1253M1242.33 866.5H1247.67M1242.33 871.833H1247.67M1242.33 877.167H1247.67M1242.33 882.5H1247.67"
+                        stroke="#FDD261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <h2>Property</h2>
+            </div>
+            <p>Premium: ${{policies.propertyPremium}}</p>
+            <p>Eff.Date: {{policies.propertyDate ? policies.propertyDate : '---'}}</p>
+        </div>
+
+        <div class="policy-card umbrella">
+            <div class="policy-header">
+                <svg width="34" height="34" viewBox="1579 864 20 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                        d="M1589 874.5V882.5C1589 883.03 1589.21 883.539 1589.59 883.914C1589.96 884.289 1590.47 884.5 1591 884.5C1591.53 884.5 1592.04 884.289 1592.41 883.914C1592.79 883.539 1593 883.03 1593 882.5M1589 864.5V865.5M1599 874.5C1598.73 872.037 1597.56 869.76 1595.71 868.106C1593.87 866.452 1591.48 865.537 1589 865.537C1586.52 865.537 1584.13 866.452 1582.29 868.106C1580.44 869.76 1579.27 872.037 1579 874.5H1599Z"
+                        stroke="#B93B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <h2>Umbrella</h2>
+            </div>
+            <p>Premium: ${{policies.umbrellaPremium}}</p>
+            <p>Eff.Date: {{policies.umbrellaDate ? policies.umbrellaDate : '---'}}</p>
+        </div>
+
+    </div>
+</div>

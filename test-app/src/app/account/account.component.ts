@@ -8,16 +8,17 @@ import { StatusComplianceComponent } from './status-compliance/status-compliance
 import { WinnabilityComponent } from './winnability/winnability.component';
 import { Account } from '../../models/account/account';
 import { AccountService } from '../services/account.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-account',
   standalone: true,
-  imports: [AccountHeaderComponent, CommunicationComponent, PerformanceMetricsComponent, PoliciesSummaryComponent, PoliciesTableComponent, StatusComplianceComponent, WinnabilityComponent],
+  imports: [CommonModule, AccountHeaderComponent, CommunicationComponent, PerformanceMetricsComponent, PoliciesSummaryComponent, PoliciesTableComponent, StatusComplianceComponent, WinnabilityComponent],
   templateUrl: './account.component.html',
   styleUrl: './account.component.css'
 })
 export class AccountComponent implements OnInit {
-  account: Account = {} as Account;
+  account?: Account;
 
   constructor(private accountService: AccountService) {
   }

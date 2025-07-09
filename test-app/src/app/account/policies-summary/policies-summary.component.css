@@ -1,0 +1,49 @@
+.policies-section {
+    padding: 24px;
+}
+
+.policies-section h2 {
+    margin: 0 0 16px 0;
+}
+
+.policies-grid {
+    display: flex;
+    gap: 16px;
+    padding: 24px 0;
+    background-color: var(--background-div);
+    flex-wrap: wrap;
+    border-radius: 16px;
+    justify-content: stretch;
+}
+
+.policies-grid .policy-card:first-child {
+    margin-left: 34px;
+}
+
+.policy-card {
+    background-color: rgb(37, 42, 61);
+    border-radius: 16px;
+    padding: 16px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.policy-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.policy-header h2 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.policy-card p {
+    font-size: 14px;
+    margin: 0;
+    color: rgb(138, 140, 152);
+}

@@ -1,1 +1,53 @@
-<p>winnability works!</p>
+<h2>Account Details</h2>
+<div class="details-container">
+    <div class="menu">
+        <div class="support">
+            <h2>DESICION SUPPORT</h2>
+            <p>4</p>
+            <a href="#">Winnability</a>
+            <p>Exposure Review & Suggested Coverage</p>
+            <p>Portfilio Strategy Alignment</p>
+            <p>Broker Analytics</p>
+        </div>
+
+        <div class="risk">
+            <h2>RISK ASSESSMENT</h2>
+            <p>6</p>
+        </div>
+
+        <div class="docs">
+            <h2>DOCUMENTS AND COMPLIANCE</h2>
+            <p>2</p>
+        </div>
+    </div>
+
+    <div class="winnability-container">
+        <h2>Winnability</h2>
+        <div class="winnability-header">
+            <div class="score">
+                <p>Overall Score</p>
+                <div class="score-value">
+                    <p>{{details.score}}%</p>
+                    <p>{{toStringWinnability(details.winnability)}}</p>
+                </div>
+            </div>
+
+            <div class="trend">
+                <p>Historical trend</p>
+                <svg width="100%" height="200" viewBox="900 1500 400 100" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M960 1600L987.73 1587.35L1014.31 1590.89L1048.58 1577.23L1087.87 1574.7L1128.69 1587.35L1167.98 1566.6H1206.11L1240 1558"
+                        stroke="#3B82F6" stroke-width="4" stroke-linecap="round" fill="none" />
+                </svg>
+                <p>Jan Feb Mar Apr Now</p>
+            </div>
+
+            <div class="position">
+                <p>Position</p>
+                <p>Your score: {{details.score}}%</p>
+                <p>Market Avg: {{details.marketAvg}}%</p>
+                <p>Top competitor: {{details.competitor}}%</p>
+            </div>
+        </div>
+    </div>
+</div>

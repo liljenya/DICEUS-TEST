@@ -1,1 +1,117 @@
-<p>status-compliance works!</p>
+<div class="container">
+    <div class="account-status-wrapper">
+        <h2 class="status-heading">Account Status</h2>
+        <div class="account-status-container">
+            <div class="status-item">
+                <div class="status" [ngClass]="toStatusClass(status.isSubmitted)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 13L9 17L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <p>Submitted</p>
+            </div>
+
+            <div class="status-delimeter" [ngClass]="toStatusDelimeterClass(status.isReviewed)">------------</div>
+
+            <div class="status-item">
+                <div class="status" [ngClass]="toStatusClass(status.isReviewed)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 13L9 17L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <p>Review</p>
+            </div>
+
+            <div class="status-delimeter" [ngClass]="toStatusDelimeterClass(status.isQuoted)">------------</div>
+
+            <div class="status-item">
+                <div class="status" [ngClass]="toStatusClass(status.isQuoted)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 13L9 17L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <p>Quote</p>
+            </div>
+
+            <div class="status-delimeter" [ngClass]="toStatusDelimeterClass(status.isBinded)">------------</div>
+
+            <div class="status-item">
+                <div class="status" [ngClass]="toStatusClass(status.isBinded)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 13L9 17L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <p>Bind</p>
+            </div>
+
+            <div class="status-delimeter" [ngClass]="toStatusDelimeterClass(status.isIssued)">------------</div>
+
+            <div class="status-item">
+                <div class="status" [ngClass]="toStatusClass(status.isIssued)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 13L9 17L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <p>Issue</p>
+            </div>
+
+            <div class="status-delimeter" [ngClass]="toStatusDelimeterClass(status.isRenewed)">------------</div>
+
+            <div class="status-item">
+                <div class="status" [ngClass]="toStatusClass(status.isRenewed)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 13L9 17L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <p>Renew</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="compliance-wrapper">
+        <h2 class="compliance-title">
+            Compliance & Documentation
+            <a href="#" class="doc-history-link">See history -&gt;</a>
+        </h2>
+
+        <div class="doc-compliance-wrapper">
+            <div class="doc-status-list">
+                <div class="doc-status-item">
+                    <div class="doc-status" [ngClass]="toStatusClass(document.isKYC)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 13L9 17L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <p>KYC verification</p>
+                </div>
+
+                <div class="doc-status-item">
+                    <div class="doc-status" [ngClass]="toStatusClass(document.isRegulatory)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 13L9 17L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <p>Regulatory approval</p>
+                </div>
+
+                <div class="doc-status-item">
+                    <div class="doc-status" [ngClass]="toStatusClass(document.isRequired)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 13L9 17L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <p>Required Documentation</p>
+                </div>
+
+                <div class="doc-status-item">
+                    <div class="doc-status" [ngClass]="toStatusClass(document.isFinancial)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 13L9 17L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <p>Financial Verification</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
