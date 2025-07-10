@@ -1,52 +1,134 @@
-<h2>Account Details</h2>
-<div class="details-container">
-    <div class="menu">
-        <div class="support">
-            <h2>DESICION SUPPORT</h2>
-            <p>4</p>
-            <a href="#">Winnability</a>
-            <p>Exposure Review & Suggested Coverage</p>
-            <p>Portfilio Strategy Alignment</p>
-            <p>Broker Analytics</p>
-        </div>
+<div class="container">
+    <h2>Account Details</h2>
+    <div class="details-container">
+        <div class="menu">
+            <div class="support">
+                <div class="support-title">
+                    <h2>DESICION SUPPORT</h2>
+                    <p>4</p>
+                </div>
+                <a href="#">Winnability</a>
+                <p>Exposure Review & Suggested Coverage</p>
+                <p>Portfilio Strategy Alignment</p>
+                <p>Broker Analytics</p>
+            </div>
 
-        <div class="risk">
-            <h2>RISK ASSESSMENT</h2>
-            <p>6</p>
-        </div>
-
-        <div class="docs">
-            <h2>DOCUMENTS AND COMPLIANCE</h2>
-            <p>2</p>
-        </div>
-    </div>
-
-    <div class="winnability-container">
-        <h2>Winnability</h2>
-        <div class="winnability-header">
-            <div class="score">
-                <p>Overall Score</p>
-                <div class="score-value">
-                    <p>{{details.score}}%</p>
-                    <p>{{toStringWinnability(details.winnability)}}</p>
+            <div class="risk">
+                <h2>RISK ASSESSMENT</h2>
+                <div>
+                    <p>6</p>
                 </div>
             </div>
 
-            <div class="trend">
-                <p>Historical trend</p>
-                <svg width="100%" height="200" viewBox="900 1500 400 100" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M960 1600L987.73 1587.35L1014.31 1590.89L1048.58 1577.23L1087.87 1574.7L1128.69 1587.35L1167.98 1566.6H1206.11L1240 1558"
-                        stroke="#3B82F6" stroke-width="4" stroke-linecap="round" fill="none" />
-                </svg>
-                <p>Jan Feb Mar Apr Now</p>
+            <div class="docs">
+                <h2>DOCUMENTS AND COMPLIANCE</h2>
+                <div>
+                    <p>2</p>
+                </div>
             </div>
+        </div>
 
-            <div class="position">
-                <p>Position</p>
-                <p>Your score: {{details.score}}%</p>
-                <p>Market Avg: {{details.marketAvg}}%</p>
-                <p>Top competitor: {{details.competitor}}%</p>
+        <div class="winnability-container">
+            <h2>Winnability</h2>
+            <div class="winnability-header">
+                <div class="score">
+                    <p>Overall Score</p>
+                    <div class="score-value">
+                        <p>{{details.score}}%</p>
+                        <app-winnability-indicator [winnability]="details.winnability"></app-winnability-indicator>
+                    </div>
+                </div>
+
+                <div class="trend">
+                    <p class="trend-header">Historical trend</p>
+                    <svg width="100%" height="200" viewBox="900 1500 400 100" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M960 1600L987.73 1587.35L1014.31 1590.89L1048.58 1577.23L1087.87 1574.7L1128.69 1587.35L1167.98 1566.6H1206.11L1240 1558"
+                            stroke="#3B82F6" stroke-width="4" stroke-linecap="round" fill="none" />
+                    </svg>
+                    <div class="months">
+                        <p>Jan</p>
+                        <p>Feb</p>
+                        <p>Mar</p>
+                        <p>Apr</p>
+                        <p>Now</p>
+                    </div>
+                </div>
+
+                <div class="position">
+                    <p>Position</p>
+                    <div class="position-entry">
+                        <app-filling-graph class="position-chart" [value]="details.score"></app-filling-graph>
+                        <p>Your score: {{details.score}}%</p>
+                    </div>
+                    <div class="position-entry">
+                        <app-filling-graph class="position-chart" [value]="details.marketAvg"></app-filling-graph>
+                        <p>Market avg: {{details.marketAvg}}%</p>
+                    </div>
+                    <div class="position-entry">
+                        <app-filling-graph class="position-chart" [value]="details.competitor"></app-filling-graph>
+                        <p>Top competitor: {{details.competitor}}%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="winnability-changes">
+                <div class="increasing-changes">
+                    <div class="increasing-changes-title">
+                        <p>Increasing winnability</p>
+                    </div>
+                    <div *ngFor="let change of details.increasing;let i = index" class="winnability-change-container">
+                        <div class="change-index increasing">
+                            {{ i+1 }}
+                        </div>
+                        <div class="change-details">
+                            <p>{{ change.name }}</p>
+                            <div class="winnability-change-chart-container">
+                                <app-change-chart class="winnability-change-chart"
+                                    [value]="change.value"></app-change-chart>
+                                <p>+{{ change.change }}%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="decreasing-changes">
+                    <div class="decreasing-changes-title">
+                        <p>Decreasing winnability</p>
+                    </div>
+                    <div *ngFor="let change of details.decreasing; let i = index" class="winnability-change-container">
+                        <div class="change-index decreasing">
+                            {{ i+1 }}
+                        </div>
+                        <div class="change-details">
+                            <p>{{ change.name }}</p>
+                            <div class="winnability-change-chart-container">
+                                <app-change-chart class="winnability-change-chart"
+                                    [color]="'linear-gradient(90deg, rgba(0, 0, 0, 0)0%, rgb(253, 210, 97) 100%)'"
+                                    [value]="change.value"></app-change-chart>
+                                <p>-{{ change.change }}%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recomendations">
+                <div class="recomendations-title">
+                    <svg width="24" height="24" viewBox="590 2100 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M593 2123C591 2124.68 590.333 2129.67 590.333 2129.67C590.333 2129.67 595.32 2129 597 2127C597.946 2125.88 597.933 2124.16 596.88 2123.12C596.361 2122.63 595.679 2122.34 594.963 2122.32C594.247 2122.3 593.548 2122.54 593 2123ZM603 2121L599 2117C599.709 2115.16 600.603 2113.39 601.666 2111.73C603.22 2109.25 605.383 2107.2 607.95 2105.79C610.518 2104.38 613.403 2103.65 616.333 2103.67C616.333 2107.29 615.293 2113.67 608.333 2118.33C606.649 2119.4 604.862 2120.29 603 2121Z"
+                            stroke="#3BB979" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M599 2117H592.333C592.333 2117 593.066 2112.96 595 2111.67C597.16 2110.23 601.666 2111.67 601.666 2111.67M603 2121V2127.67C603 2127.67 607.04 2126.93 608.333 2125C609.773 2122.84 608.333 2118.33 608.333 2118.33"
+                            stroke="#3BB979" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p>AI-Powered Recommendations</p>
+                </div>
+                <div *ngFor="let item of details.recommendations" class="recomendations-content">
+                    <div class="recommendations-info">
+                        <p>{{item.title}}</p>
+                        <p>{{item.description}}</p>
+                    </div>
+                    <button>Apply</button>
+                </div>
             </div>
         </div>
     </div>

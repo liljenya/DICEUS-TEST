@@ -1,0 +1,76 @@
+.communication-container {
+    padding: 34px;
+    display: flex;
+    flex-direction: column;
+}
+
+.communication-content {
+    border-radius: 18px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-div);
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.status {
+    border-radius: 999px;
+    background-color: rgb(30, 64, 175);
+    padding: 2px 12px;
+}
+
+.from {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(138, 140, 152);
+}
+
+.body {
+    font-weight: 300;
+}
+
+.attachments {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+    padding: 2px 15px;
+    border-radius: 999px;
+    background-color: rgb(50, 139, 95);
+    max-width: fit-content;
+}
+
+.communication-info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 15px;
+}
+
+.communication-info {
+    background-color: rgb(37, 42, 61);
+    border-radius: 18px;
+    flex: 1;
+    padding: 15px;
+}
+
+.communication-info button {
+    border-radius: 999px;
+    background-color: var(--accent-color);
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 8px 25px;
+    margin-top: 6px;
+}

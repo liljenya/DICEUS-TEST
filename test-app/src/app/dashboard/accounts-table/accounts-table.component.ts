@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { AccountItem, AccountItemAppetite, AccountItemStatus } from '../../../models/dashboard/account-item';
 import { AccountsService } from '../../services/accounts.service';
 import { CommonModule } from '@angular/common';
-import { Winnability } from '../../../models/winnability';
+import { WinnabilityIndicatorComponent } from '../../winnability-indicator/winnability-indicator.component';
 
 @Component({
   selector: 'app-accounts-table',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, WinnabilityIndicatorComponent],
   templateUrl: './accounts-table.component.html',
   styleUrl: './accounts-table.component.css'
 })
@@ -61,17 +61,6 @@ export class AccountsTableComponent implements OnInit {
         return 'dot blue';
       default:
         return 'dot';
-    }
-  }
-
-  toStringWinnability(winnability: Winnability) {
-    switch (winnability) {
-      case Winnability.VeryStrong:
-        return 'Very Strong';
-      case Winnability.Strong:
-        return 'Strong';
-      case Winnability.Medium:
-        return 'Medium';
     }
   }
 }

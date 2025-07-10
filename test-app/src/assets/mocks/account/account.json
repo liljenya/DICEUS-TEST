@@ -109,5 +109,97 @@
                 "description": "Can potentially reduce loss ratio by 15-20% based on simillar maritime accounts in your portfolio. Specific focus on loading/unloading operations would address the most frequent claim scenarios."
             }
         ]
-    }
+    },
+    "communications": [
+        {
+            "title": "Policy Renewal - Auto Insurance 5/15/25",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "name": "Michael Roberts",
+            "sent": "04/05",
+            "attachmentsCount": 3,
+            "status": 1
+        },
+        {
+            "title": "FWD:New Submission - BPM Real Estatec-EFF 4/1/24",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "name": "Joshua Dunmire",
+            "sent": "03/25",
+            "status": 2
+        },
+        {
+            "title": "New Quote Request - Workers Comp Insurance",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "name": "Sarah Chen",
+            "sent": "04/05",
+            "attachmentsCount": 3,
+            "status": 1
+        },
+        {
+            "title": "New Business:BPM Real Estate Group, LLC",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "name": "Isabel Kreller",
+            "sent": "02/28",
+            "attachmentsCount": 5
+        }
+    ],
+    "policyEntries": [
+        {
+            "id": 17030212,
+            "name": "Marine Cargo",
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"188\" cy=\"3477\" r=\"12\" fill=\"#3B82F6\"/><path d=\"M188 3475.96V3478.5M188 3470.5V3472.5M192.666 3477.83V3473.83C192.666 3473.48 192.526 3473.14 192.276 3472.89C192.026 3472.64 191.687 3472.5 191.333 3472.5H184.666C184.313 3472.5 183.974 3472.64 183.724 3472.89C183.473 3473.14 183.333 3473.48 183.333 3473.83V3477.83\" stroke=\"#E5E7EB\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M192.92 3482.5C193.637 3481.29 194.011 3479.91 194 3478.5L188.541 3476.07C188.371 3476 188.187 3475.96 188 3475.96C187.814 3475.96 187.629 3476 187.459 3476.07L182 3478.5C181.969 3480.4 182.636 3482.24 183.873 3483.67\" stroke=\"#E5E7EB\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M181.333 3483.17C181.733 3483.5 182.133 3483.83 183 3483.83C184.666 3483.83 184.666 3482.5 186.333 3482.5C187.2 3482.5 187.6 3482.83 188 3483.17C188.4 3483.5 188.8 3483.83 189.666 3483.83C191.333 3483.83 191.333 3482.5 193 3482.5C193.866 3482.5 194.266 3482.83 194.666 3483.17\" stroke=\"#E5E7EB\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+            "effDate": "2026/06/30",
+            "expDate": "2027/06/30",
+            "expTech": 587.500,
+            "expPremium": 605.000,
+            "status": 0,
+            "renewalToTech": 610.000,
+            "renewalTech": 620.000,
+            "renewalPremium": 625.000,
+            "rate": 3.3,
+            "loss": 22
+        },
+        {
+            "id": 4631092,
+            "name": "General Liability",
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"188\" cy=\"3544\" r=\"12\" fill=\"#3BB979\"/><path d=\"M193.334 3544.67C193.334 3548 191 3549.67 188.227 3550.63C188.082 3550.68 187.924 3550.68 187.78 3550.63C185 3549.67 182.667 3548 182.667 3544.67V3540C182.667 3539.82 182.737 3539.65 182.862 3539.53C182.987 3539.4 183.157 3539.33 183.334 3539.33C184.667 3539.33 186.334 3538.53 187.494 3537.52C187.635 3537.4 187.815 3537.33 188 3537.33C188.186 3537.33 188.366 3537.4 188.507 3537.52C189.674 3538.54 191.334 3539.33 192.667 3539.33C192.844 3539.33 193.013 3539.4 193.138 3539.53C193.263 3539.65 193.334 3539.82 193.334 3540V3544.67Z\" stroke=\"#E5E7EB\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M186 3544L187.333 3545.33L190 3542.67\" stroke=\"#E5E7EB\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+            "effDate": "2026/06/30",
+            "expDate": "2027/06/30",
+            "expTech": 160.000,
+            "expPremium": 165.000,
+            "status": 0,
+            "renewalToTech": 170.000,
+            "renewalTech": 172.500,
+            "renewalPremium": 175.000,
+            "rate": 6.1,
+            "loss": 55
+        },
+        {
+            "id": 9182371,
+            "name": "Workers Comp",
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"188\" cy=\"3611\" r=\"12\" fill=\"#6A3BF6\"/><path d=\"M193.334 3611.67C193.334 3615 191 3616.67 188.227 3617.63C188.082 3617.68 187.924 3617.68 187.78 3617.63C185 3616.67 182.667 3615 182.667 3611.67V3607C182.667 3606.82 182.737 3606.65 182.862 3606.53C182.987 3606.4 183.157 3606.33 183.334 3606.33C184.667 3606.33 186.334 3605.53 187.494 3604.52C187.635 3604.4 187.815 3604.33 188 3604.33C188.186 3604.33 188.366 3604.4 188.507 3604.52C189.674 3605.54 191.334 3606.33 192.667 3606.33C192.844 3606.33 193.013 3606.4 193.138 3606.53C193.263 3606.65 193.334 3606.82 193.334 3607V3611.67Z\" stroke=\"#E5E7EB\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M184.251 3615.61C184.535 3614.84 185.047 3614.18 185.718 3613.72C186.388 3613.25 187.185 3613 188.001 3613C188.818 3613 189.614 3613.25 190.285 3613.72C190.955 3614.18 191.466 3614.84 191.75 3615.61\" stroke=\"#E5E7EB\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M188.001 3613C189.473 3613 190.667 3611.81 190.667 3610.33C190.667 3608.86 189.473 3607.67 188.001 3607.67C186.528 3607.67 185.334 3608.86 185.334 3610.33C185.334 3611.81 186.528 3613 188.001 3613Z\" stroke=\"#E5E7EB\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+            "effDate": "2026/06/30",
+            "expDate": "2027/06/30",
+            "expTech": 0,
+            "expPremium": 0,
+            "status": 1,
+            "renewalToTech": 73.500,
+            "renewalTech": 75.000,
+            "renewalPremium": 75.000
+        },
+        {
+            "id": 5274936,
+            "name": "Umbrella",
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"188\" cy=\"3678\" r=\"12\" fill=\"#B93B3B\"/><path d=\"M193.334 3678.67C193.334 3682 191 3683.67 188.227 3684.63C188.082 3684.68 187.924 3684.68 187.78 3684.63C185 3683.67 182.667 3682 182.667 3678.67V3674C182.667 3673.82 182.737 3673.65 182.862 3673.53C182.987 3673.4 183.157 3673.33 183.334 3673.33C184.667 3673.33 186.334 3672.53 187.494 3671.52C187.635 3671.4 187.815 3671.33 188 3671.33C188.186 3671.33 188.366 3671.4 188.507 3671.52C189.674 3672.54 191.334 3673.33 192.667 3673.33C192.844 3673.33 193.013 3673.4 193.138 3673.53C193.263 3673.65 193.334 3673.82 193.334 3674V3678.67Z\" stroke=\"#E5E7EB\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+            "effDate": "2026/03/13",
+            "expDate": "2027/03/13",
+            "expTech": 245.000,
+            "expPremium": 250.000,
+            "status": 0,
+            "renewalToTech": 267.500,
+            "renewalTech": 270.000,
+            "renewalPremium": 275.000,
+            "rate": 10.0,
+            "loss": 78
+        }
+    ]
 }

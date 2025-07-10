@@ -33,9 +33,7 @@
         <div class="metric-card">
             <h2>Exposure Distribution</h2>
             <div *ngFor="let distribution of metrics.distribution" class="distribution-row">
-                <div class="bar-container">
-                    <div class="bar-fill" [style.width.%]="distribution.value"></div>
-                </div>
+                <app-filling-graph class="bar-container" [value]="distribution.value"></app-filling-graph>
                 <div class="bar-label">
                     {{ distribution.name }}: {{ distribution.value }}%
                 </div>

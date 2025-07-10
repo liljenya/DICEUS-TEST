@@ -152,23 +152,3 @@
 .dot.blue {
     background-color: rgb(59, 130, 246);
 }
-
-.winnability {
-    border: 1px solid var(--accent-color);
-    border-radius: 999px;
-    padding: 4px 10px;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    box-sizing: border-box;
-}
-
-.dots {
-    font-size: 16px;
-    color: var(--accent-color);
-}

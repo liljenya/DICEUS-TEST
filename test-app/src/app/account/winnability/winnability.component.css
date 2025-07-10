@@ -1,12 +1,16 @@
+.container{
+    padding: 34px;
+}
+
 .details-container {
     display: flex;
     background-color: var(--background-div);
     padding: 20px;
-    border-radius: 16px;
+    border-radius: 18px;
 }
 
 .menu {
-    width: 220px;
+    flex: 1;
     padding: 15px;
     border-radius: 8px;
     color: rgb(229, 231, 235);
@@ -26,19 +30,53 @@
     text-decoration: none;
 }
 
+.risk,
+.docs,
+.support-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.support-title p{
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+
+.risk div,
+.docs div {
+    padding: 6px 10px 6px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(23, 25, 34);
+    border-radius: 8px;
+}
+
 .support {
     background-color: rgb(37, 42, 61);
-    border-radius: 16px;
+    border-radius: 18px;
     padding: 20px;
     line-height: 1.5;
 }
 
+.winnability-changes {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-between;
+}
 
 .winnability-container {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    border-radius: 8px;
+    border-left: 1px dashed rgb(229, 231, 235);
+    flex: 4;
 }
 
 .winnability-container h2 {
@@ -49,6 +87,7 @@
 
 .winnability-header {
     display: flex;
+    flex-direction: row;
     gap: 15px;
     margin-top: 20px;
 }
@@ -61,12 +100,162 @@
     flex-direction: column;
     background-color: rgb(37, 42, 61);
     padding: 16px;
-    border-radius: 8px;
-    gap: 8px;
+    border-radius: 18px;
 }
 
-.score-value p:first-child {
-    font-size: 40px;
+.increasing-changes,
+.decreasing-changes {
+    background-color: rgb(37, 42, 61);
+    border-radius: 18px;
+    padding: 16px;
+    flex: 1;
+}
+
+.score p,
+.trend-header,
+.position p:first-child,
+.increasing-changes-title p:first-child,
+.decreasing-changes-title p:first-child {
+    font-size: 30px;
     font-weight: 300;
     color: var(--nav-text);
+}
+
+.score-value {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.score-value p {
+    font-size: 40px;
+    color: white;
+}
+
+.position-entry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.position-entry p {
+    color: rgb(138, 139, 152);
+    flex: 1;
+}
+
+.position-chart {
+    flex: 1;
+    height: 23px;
+}
+
+.winnability-changes {
+    flex: 1;
+}
+
+.winnability-change-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.winnability-change-container p {
+    font-size: 20px;
+    color: rgb(229, 231, 235);
+    font-weight: 300;
+}
+
+.winnability-change-chart-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.winnability-change-chart-container p {
+    color: rgb(138, 139, 152);
+    font-size: 18px;
+}
+
+.winnability-change-chart {
+    flex: 1;
+    height: 23px;
+}
+
+.months {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+}
+
+.months p {
+    color: rgb(138, 139, 152);
+}
+
+.change-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.change-index {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 999px;
+    border: 2px solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.increasing {
+    color: rgb(59, 185, 121);
+    border-color: rgb(59, 185, 121);
+}
+
+.decreasing {
+    color: rgb(253, 210, 97);
+    border-color: rgb(253, 210, 97);
+}
+
+.recomendations {
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    background-color: rgb(37, 42, 61);
+    padding: 16px;
+    margin-top: 14px;
+}
+
+.recomendations-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.recomendations-title p {
+    font-size: 30px;
+    color: rgb(59, 185, 121);
+}
+
+.recomendations-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.recommendations-info p:not(:first-child) {
+    color: rgb(138, 139, 152);
+}
+
+.recomendations-content button {
+    border: none;
+    background-color: rgb(59, 185, 121);
+    color: white;
+    border-radius: 999px;
+    width: 150px;
+    height: 50px;
 }

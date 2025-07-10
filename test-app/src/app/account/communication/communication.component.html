@@ -1,1 +1,25 @@
-<p>communication works!</p>
+<div class="communication-container">
+    <h2>Communication</h2>
+    <div class="communication-content">
+        <app-filter-search></app-filter-search>
+        <div class="communication-info-container">
+            <div *ngFor="let item of communications" class="communication-info">
+                <div class="title-container">
+                    <p class="status" *ngIf="item.status">{{toStatusString(item.status)}}</p>
+                    <p class="title">{{item.title}}</p>
+                </div>
+                <p class="from">{{item.name}} // {{item.sent}}</p>
+                <p class="body">{{item.body}}</p>
+                <div *ngIf="item.attachmentsCount && item.attachmentsCount > 0" class="attachments">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="220 2828 14 14">
+                        <path
+                            d="M227.823 2840.5L233 2835.2M229.667 2831L224.058 2836.72C223.808 2836.97 223.667 2837.31 223.667 2837.67C223.667 2838.02 223.808 2838.36 224.058 2838.61C224.308 2838.86 224.647 2839 225 2839C225.354 2839 225.693 2838.86 225.943 2838.61L231.552 2832.89C232.052 2832.39 232.333 2831.71 232.333 2831C232.333 2830.29 232.052 2829.61 231.552 2829.11C231.052 2828.61 230.374 2828.33 229.667 2828.33C228.96 2828.33 228.282 2828.61 227.782 2829.11L222.172 2834.84C221.421 2835.59 221 2836.61 221 2837.67C221 2838.73 221.421 2839.75 222.172 2840.5C222.922 2841.25 223.939 2841.67 225 2841.67C226.061 2841.67 227.079 2841.25 227.829 2840.5"
+                            stroke="#E5E7EB" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p>{{item.attachmentsCount}} attachments</p>
+                </div>
+                <button>Reply</button>
+            </div>
+        </div>
+    </div>
+</div>

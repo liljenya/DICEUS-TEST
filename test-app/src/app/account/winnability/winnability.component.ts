@@ -1,25 +1,17 @@
 import { Component, Input } from '@angular/core';
 import { Details } from '../../../models/account/details';
-import { Winnability } from '../../../models/winnability';
+import { WinnabilityIndicatorComponent } from '../../winnability-indicator/winnability-indicator.component';
+import { CommonModule } from '@angular/common';
+import { FillingGraphComponent } from '../../filling-graph/filling-graph.component';
+import { ChangeChartComponent } from '../../change-chart/change-chart.component';
 
 @Component({
   selector: 'app-winnability',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, WinnabilityIndicatorComponent, FillingGraphComponent, ChangeChartComponent],
   templateUrl: './winnability.component.html',
   styleUrl: './winnability.component.css'
 })
 export class WinnabilityComponent {
   @Input() details!: Details;
-  
-  toStringWinnability(winnability: Winnability) {
-    switch (winnability) {
-      case Winnability.VeryStrong:
-        return 'Very Strong';
-      case Winnability.Strong:
-        return 'Strong';
-      case Winnability.Medium:
-        return 'Medium';
-    }
-  }
 }

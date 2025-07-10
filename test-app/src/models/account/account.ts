@@ -3,6 +3,8 @@ import { Policies } from "./policies";
 import { Status } from "./status";
 import { Document } from "./document";
 import { Details } from "./details";
+import { Communication } from "./communication";
+import { PolicyEntry } from "./policy-entry";
 
 export interface Account {
     name: string,
@@ -14,6 +16,8 @@ export interface Account {
     policies: Policies,
     status: Status,
     document: Document,
-    details: Details
+    details: Details,
+    communications: Communication[],
+    policyEntries: PolicyEntry[]
 }
 

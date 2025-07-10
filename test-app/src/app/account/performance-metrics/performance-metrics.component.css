@@ -89,10 +89,6 @@
 .bar-container {
     flex: 1;
     height: 23px;
-    background-color: var(--border-color);
-    border-bottom-right-radius: 6px;
-    border-top-right-radius: 6px;
-    overflow: hidden;
 }
 
 .bar-fill {

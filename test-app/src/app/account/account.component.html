@@ -4,6 +4,6 @@
     <app-policies-summary [policies]="account.policies"></app-policies-summary>
     <app-status-compliance [status]="account.status" [document]="account.document"></app-status-compliance>
     <app-winnability [details]="account.details"></app-winnability>
-    <app-communication></app-communication>
-    <app-policies-table></app-policies-table>
+    <app-communication [communications]="account.communications"></app-communication>
+    <app-policies-table [policies]="account.policyEntries"></app-policies-table>
 </div>

@@ -45,10 +45,7 @@
                 {{ toStringStatus(item.status) }}
             </div>
             <div class="triage">{{ item.triage }}</div>
-            <div class="winnability">
-                <span class="dots">• • • •</span>
-                {{ toStringWinnability(item.winnability) }}
-            </div>
+            <app-winnability-indicator [winnability]="item.winnability"></app-winnability-indicator>
             <button class="dots-button">
                 <span></span>
                 <span></span>

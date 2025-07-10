@@ -1,1 +1,66 @@
-<p>policies-table works!</p>
+<div class="container">
+    <h2>Policies</h2>
+    <div class="table">
+        <app-filter-search></app-filter-search>
+        <div class="table-container">
+            <div class="table-row table-head">
+                <div>LINE</div>
+                <div>EFF.DATE</div>
+                <div>EXP.DATE</div>
+                <div>STATUS</div>
+                <div>EXPIRING TECH</div>
+                <div>EXPIRING PREMIUM</div>
+                <div>RENEWAL TO TECH</div>
+                <div>RENEWAL TECH</div>
+                <div>RENEWAL PREMIUM</div>
+                <div>RATE CHANGE</div>
+                <div>LOSS RATIO</div>
+                <div></div>
+            </div>
+
+            <div class="table-row" *ngFor="let item of policies">
+                <div>
+                    {{ item.name }}
+                    <div class="type">{{ item.id }}</div>
+                </div>
+                <div>{{ item.effDate }}</div>
+                <div>{{ item.expDate }}</div>
+                <div class="status">
+                    <span class="dot" [ngClass]="getStatusColor(item.status)"></span>
+                    {{ toStatusString(item.status) }}
+                </div>
+                <div>${{ item.expTech }}</div>
+                <div>${{ item.expPremium }}</div>
+                <div>${{ item.renewalToTech }}</div>
+                <div>${{ item.renewalTech }}</div>
+                <div>${{ item.renewalPremium }}</div>
+                <div>{{ item.rate ? item.rate + '%' : 'N/A' }}</div>
+                <div *ngIf="item.loss" class="loss" [ngClass]="getRatioColor(item.loss)">
+                    {{ item.loss }}%
+                </div>
+                <div *ngIf="!item.loss" class="loss">
+                    N/A
+                </div>
+                <button class="dots-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="table-row">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div>TOTAL ({{policies.length}})</div>
+                <div>${{ getExpTechSum() }}</div>
+                <div>${{ getExpPremiumSum() }}</div>
+                <div>${{ getRenewalToTechhSum() }}</div>
+                <div>${{ getRenewalTechSum() }}</div>
+                <div>${{ getRenewalPremiumSum() }}</div>
+                <div>{{ getAverageRate() }}%</div>
+                <div class="loss" [ngClass]="getRatioColor(getAverageLoss())">{{ getAverageLoss() }}%</div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</div>
