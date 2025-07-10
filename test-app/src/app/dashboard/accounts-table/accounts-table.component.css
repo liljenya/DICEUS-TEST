@@ -45,18 +45,22 @@
     font-size: 12px;
 }
 
+.header-controls button:last-child {
+    background-color: var(--accent-color);
+    color: white;
+}
+
 .table-container {
     display: flex;
     flex-direction: column;
     width: 100%;
     overflow-x: auto;
-    border-radius: 18px;
 }
 
 .table-row {
     display: grid;
     grid-template-columns:
-        1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr 1fr 1.5fr 0.5fr;
+        2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr 1fr 1.5fr 0.5fr;
     gap: 10px;
     padding: 12px 16px;
     align-items: center;
@@ -70,7 +74,10 @@
     font-size: 13px;
     color: #94a3b8;
     text-transform: uppercase;
-    border-radius: 12px 12px 0 0;
+}
+
+.table-head div {
+    line-height: 0px;
 }
 
 .table-row:nth-child(odd):not(.table-head) {

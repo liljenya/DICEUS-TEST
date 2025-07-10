@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -10,5 +10,16 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  admins = Array(6).fill('Admin');
+  admins = Array(13).fill('Admin');
+
+  @ViewChild('navContainer', { static: false }) navContainer!: ElementRef;
+
+  scrollLeft() {
+    this.navContainer.nativeElement.scrollBy({ left: -200, behavior: 'smooth' });
+  }
+
+  scrollRight() {
+    this.navContainer.nativeElement.scrollBy({ left: 200, behavior: 'smooth' });
+  }
+
 }

@@ -15,10 +15,11 @@
     display: flex;
     align-items: center;
     font-size: 14px;
+    gap: 10px;
 }
 
 .bullet {
-    font-size: 100px;
+    font-size: 75px;
     line-height: 1;
     display: flex;
     align-items: center;

@@ -20,7 +20,7 @@
 .chart-bar {
     display: flex;
     width: 100%;
-    height: 22px;
+    height: 35px;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 6px;
@@ -32,11 +32,12 @@
     font-weight: bold;
     text-align: center;
     color: white;
-    line-height: 18px;
     position: absolute;
     width: 100%;
-    top: 0;
+    top: 50%;
     left: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
 }
 
 .chart-annotation {
@@ -99,7 +100,7 @@
 .bar-full {
     display: flex;
     flex-grow: 1;
-    height: 22px;
+    height: 35px;
     overflow: hidden;
     position: relative;
 }
@@ -145,4 +146,18 @@
     color: rgb(148, 163, 184);
     margin-bottom: 12px;
     padding-left: 80px;
+}
+
+.target-note {
+    font-size: 11px;
+    color: gray;
+    padding-left: 155px;
+}
+
+.chart-annotation.positive {
+    color: rgb(74, 222, 128);
+}
+
+.section-title {
+    padding-top: 30px;
 }

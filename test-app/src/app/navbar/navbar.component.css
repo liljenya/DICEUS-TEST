@@ -71,6 +71,45 @@ hr {
     border: 1px solid var(--border-color);
 }
 
+.navigation-wrapper {
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigation-container {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 12px;
+}
+
+.navigation-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-buttons {
+    right: 0;
+    display: flex;
+    gap: 8px;
+    padding: 4px;
+    border-radius: 999px;
+    z-index: 10;
+}
+
+.scroll-btn {
+    background-color: var(--background-color);
+    color: rgb(229, 231, 235);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
 .navigation-container a>p {
     color: rgb(229, 231, 235);
     margin-left: 4px;
