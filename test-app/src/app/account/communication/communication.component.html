@@ -18,7 +18,7 @@
                     </svg>
                     <p>{{item.attachmentsCount}} attachments</p>
                 </div>
-                <button>Reply</button>
+                <button *ngIf="item && item.status !== 2">Reply</button>
             </div>
         </div>
     </div>

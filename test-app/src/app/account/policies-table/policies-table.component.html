@@ -20,7 +20,10 @@
 
             <div class="table-row" *ngFor="let item of policies">
                 <div>
-                    {{ item.name }}
+                    <div class="table-item-icon">
+                        <!-- <div [innerHTML]="getSanitizedIcon(item.icon)"></div> -->
+                        <div>{{ item.name }}</div>
+                    </div>
                     <div class="type">{{ item.id }}</div>
                 </div>
                 <div>{{ item.effDate }}</div>
@@ -34,7 +37,7 @@
                 <div>${{ item.renewalToTech }}</div>
                 <div>${{ item.renewalTech }}</div>
                 <div>${{ item.renewalPremium }}</div>
-                <div>{{ item.rate ? item.rate + '%' : 'N/A' }}</div>
+                <div class="ratio" [ngClass]="getLossColor(item.rate)">{{ item.rate ? item.rate + '%' : 'N/A' }}</div>
                 <div *ngIf="item.loss" class="loss" [ngClass]="getRatioColor(item.loss)">
                     {{ item.loss }}%
                 </div>

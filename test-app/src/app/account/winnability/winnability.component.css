@@ -1,4 +1,4 @@
-.container{
+.container {
     padding: 34px;
 }
 
@@ -40,19 +40,13 @@
     align-items: center;
 }
 
-.support-title p{
-    border: 1px solid white;
-    border-radius: 8px;
-    padding: 6px 10px;
-}
-
 .risk div,
 .docs div {
     padding: 6px 10px 6px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(23, 25, 34);
+    background-color: rgb(37, 42, 56);
     border-radius: 8px;
 }
 
@@ -61,6 +55,23 @@
     border-radius: 18px;
     padding: 20px;
     line-height: 1.5;
+}
+
+.support a {
+    color: var(--accent-color);
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.support p {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.support-title p {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 6px 10px;
 }
 
 .winnability-changes {
@@ -119,6 +130,7 @@
     font-size: 30px;
     font-weight: 300;
     color: var(--nav-text);
+    line-height: 0px;
 }
 
 .score-value {
@@ -131,6 +143,7 @@
 .score-value p {
     font-size: 40px;
     color: white;
+    line-height: 0px;
 }
 
 .position-entry {
@@ -141,8 +154,16 @@
 }
 
 .position-entry p {
-    color: rgb(138, 139, 152);
     flex: 1;
+    line-height: 0px;
+}
+
+.position-entry-active {
+    color: white;
+}
+
+.position-entry-disabled {
+    color: rgb(138, 139, 152);
 }
 
 .position-chart {
@@ -158,6 +179,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
 }
 
 .winnability-change-container p {
@@ -170,6 +192,7 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+    align-items: center;
 }
 
 .winnability-change-chart-container p {
@@ -196,6 +219,11 @@
 .change-details {
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+.change-details p {
+    line-height: 0px;
 }
 
 .change-index {
@@ -217,6 +245,21 @@
 .decreasing {
     color: rgb(253, 210, 97);
     border-color: rgb(253, 210, 97);
+}
+
+.increasing-changes-title,
+.decreasing-changes-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+.increasing-changes-title p,
+.decreasing-changes-title p {
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--nav-text);
 }
 
 .recomendations {
@@ -254,8 +297,10 @@
 .recomendations-content button {
     border: none;
     background-color: rgb(59, 185, 121);
-    color: white;
+    color: rgb(29, 33, 37);
     border-radius: 999px;
+    font-size: 20px;
     width: 150px;
     height: 50px;
+    cursor: pointer;
 }

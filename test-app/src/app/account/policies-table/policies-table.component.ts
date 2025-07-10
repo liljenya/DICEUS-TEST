@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { FilterSearchComponent } from '../../filter-search/filter-search.component';
 import { PolicyEntry, PolicyEntryStatus } from '../../../models/account/policy-entry';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-policies-table',
@@ -12,6 +13,20 @@ import { PolicyEntry, PolicyEntryStatus } from '../../../models/account/policy-e
 })
 export class PoliciesTableComponent {
   @Input() policies: PolicyEntry[] = [];
+
+  constructor(private sanitizer: DomSanitizer) { }
+
+  getSanitizedIcon(icon: string): SafeHtml {
+    return this.sanitizer.bypassSecurityTrustHtml(icon);
+  }
+
+  getLossColor(loss?: number): string {
+    if (!loss || loss < 4) {
+      return 'white';
+    } else {
+      return 'red';
+    }
+  }
 
   getRatioColor(ratio: number): string {
     if (ratio <= 33) {
