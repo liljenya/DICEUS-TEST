@@ -1,143 +1,143 @@
 .work-queue {
-    padding: 30px;
-    background-color: var(--background-div);
-    border-radius: 25px;
-    height: 100%;
+  padding: 30px;
+  background-color: var(--background-div);
+  border-radius: 25px;
+  height: 100%;
 }
 
 .header-container h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
+  font-size: 28px;
+  margin-bottom: 15px;
 }
 
 .sub-header-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .sub-header-container a {
-    border-radius: 999px;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-    transition: background-color 0.2s;
-    cursor: pointer;
-    background-color: var(--background-color);
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  background-color: var(--background-color);
 }
 
 .sub-header-container a:hover,
 .sub-header-container a:first-child {
-    background-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .table-container {
-    padding-top: 15px;
-    background-color: var(--background-div);
-    overflow-x: auto;
+  padding-top: 15px;
+  background-color: var(--background-div);
+  overflow-x: auto;
 }
 
 .table-items {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    padding: 12px;
-    column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 12px;
+  column-gap: 20px;
 }
 
 .table-titles {
-    font-size: 14px;
-    color: rgb(148, 163, 184);
-    background-color: rgb(37, 42, 61);
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    padding: 0px 12px;
-    column-gap: 20px;
+  font-size: 14px;
+  color: rgb(148, 163, 184);
+  background-color: rgb(37, 42, 61);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 0px 12px;
+  column-gap: 20px;
 }
 
 .table-titles p {
-    line-height: 0px;
+  line-height: 0px;
 }
 
 .table-items {
-    font-size: 14px;
-    align-items: center;
+  font-size: 14px;
+  align-items: center;
 }
 
 .table-items:nth-child(odd) {
-    background-color: rgb(37, 42, 61);
-    color: white;
+  background-color: rgb(37, 42, 61);
+  color: white;
 }
 
 .originator-cell {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .icon {
-    display: flex;
-    background: linear-gradient(200deg, rgb(51, 51, 200) 15%, rgb(40, 40, 139) 85%);
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 999px;
-    color: white;
-    font-size: 15px;
+  display: flex;
+  background: linear-gradient(200deg, rgb(51, 51, 200) 15%, rgb(40, 40, 139) 85%);
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  color: white;
+  font-size: 15px;
 }
 
 .client-line-cell p:nth-child(2) {
-    color: rgb(148, 163, 184);
+  color: rgb(148, 163, 184);
 }
 
 .client-line-cell p {
-    margin: 0;
+  margin: 0;
 }
 
 .dots-button {
-    background-color: transparent;
-    border: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    width: 30px;
-    height: 30px;
-    border-radius: 999px;
-    cursor: pointer;
+  background-color: transparent;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  cursor: pointer;
 }
 
 .dots-button span {
-    color: white;
-    width: 3px;
-    height: 3px;
-    background-color: currentColor;
-    border-radius: 50%;
+  color: white;
+  width: 3px;
+  height: 3px;
+  background-color: currentColor;
+  border-radius: 50%;
 }
 
 .status-cell {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .status-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .status-dot.blue {
-    background-color: blue;
+  background-color: blue;
 }
 
 .status-dot.yellow {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 .status-dot.green {
-    background-color: #4ade80;
+  background-color: #4ade80;
 }

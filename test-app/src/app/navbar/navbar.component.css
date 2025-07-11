@@ -128,3 +128,71 @@ hr {
 .navigation-container a.active svg {
     stroke: white;
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .heading-container {
+    padding: 0 20px;
+  }
+
+  .heading {
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  .search-container input {
+    width: 220px;
+    height: 36px;
+    padding-left: 8px;
+  }
+
+  .navigation-container {
+    padding-left: 20px;
+    gap: 10px;
+  }
+
+  .navigation-container a {
+    padding-left: 8px;
+    padding-right: 8px;
+    max-height: 36px;
+    font-size: 14px;
+  }
+
+  .scroll-btn {
+    padding: 8px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-container {
+    padding: 0 60px;
+  }
+
+  .heading {
+    font-size: 28px;
+    padding-left: 60px;
+  }
+
+  .search-container input {
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+  }
+
+  .navigation-container {
+    padding-left: 50px;
+    gap: 12px;
+  }
+
+  .navigation-container a {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-height: 40px;
+    font-size: 16px;
+  }
+
+  .scroll-btn {
+    padding: 10px;
+    font-size: 25px;
+  }
+}

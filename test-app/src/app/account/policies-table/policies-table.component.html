@@ -21,7 +21,7 @@
             <div class="table-row" *ngFor="let item of policies">
                 <div>
                     <div class="table-item-icon">
-                        <!-- <div [innerHTML]="getSanitizedIcon(item.icon)"></div> -->
+                        <div [innerHTML]="getSanitizedIcon(item.icon)"></div>
                         <div>{{ item.name }}</div>
                     </div>
                     <div class="type">{{ item.id }}</div>

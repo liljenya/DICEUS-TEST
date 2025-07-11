@@ -52,7 +52,7 @@
 
 .status-delimeter {
     color: var(--border-color);
-    border-top: 2px dashed;
+    border-top: 2px dotted;
     width: 100%;
 }
 

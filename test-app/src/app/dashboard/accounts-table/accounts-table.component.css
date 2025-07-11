@@ -76,10 +76,6 @@
     text-transform: uppercase;
 }
 
-.table-head div {
-    line-height: 0px;
-}
-
 .table-row:nth-child(odd):not(.table-head) {
     background-color: rgb(37, 42, 61);
 }
